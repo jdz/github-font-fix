@@ -1,0 +1,17 @@
+{
+    "name": "GitHub font fix",
+    "version": "0.1",
+    "description": "Fix GitHub monospace font.",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "Permissions": [
+        "https://github.com"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://github.com/*"],
+            "css": ["fixfont.css"]
+        }
+    ]
+}
