@@ -1,0 +1,32 @@
+Me, and I guess most other programmers have their own favourite monospace
+font.  And they most probably have set up their browsers to use that font as
+the "monospace" generic font family.
+
+But GitHub, a site for programmers, of all places, just plain ignores this
+preference.  What's worse, they use "Courier New" (sometimes just "Courier")
+as a way to make my eyes hurt every time I want to read code on the site.
+
+I have nothing against "Courier New", except for the following:
+
+ - It is not very well suited for code listings (due to some well known almost
+   indistinguishable glyphs), and
+
+ - The font rendering is quite thin on my operating system, which, combined
+   with light colors no not-really-white background makes my eyes hurt when
+   trying to read the code.
+
+According to [1] GitHub has decided not to do the right thing and make the
+programmers all around the world suffer.
+
+This extension only provides a stylesheet that overrides all selectors that
+mention "Courier" by setting "font-family" to "monospace".  I did this with a
+quick Emacs keyboard macro so it may well not be perfect, and will probably
+get out of date at some near point in future.  But I totally refuse to invest
+any more time on coming up with a more reliable and "proper" solution when the
+right thing(TM) is for GitHub to do their homework.
+
+The [temporary] icon is from the Silk Icons[2] set.
+
+Footnotes: 
+[1]  http://support.github.com/discussions/site/937-please-dont-use-specific-monospace-fonts
+[2]  http://www.famfamfam.com/lab/icons/silk/
